@@ -1,0 +1,117 @@
+/* :root {
+    --shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  
+    --font-family: Dosis, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --font-weight-heavy: 700;
+  
+    --color-neutral-100: #000000;
+    --color-neutral-200: #4f4f4f;
+    --color-neutral-300: #777777;
+    --color-neutral-500: #979797;
+    --color-neutral-700: #cccccc;
+    --color-neutral-800: #eaeaea;
+    --color-neutral-900: #ffffff;
+  
+    --color-primary-100: #af0148;
+    --color-primary-200: #d00256;
+  
+    --color-secondary-100: #47c2c9;
+    --color-secondary-200: #50dae3;
+  
+    --color-info-100: #74bfdd;
+    --color-info-200: #a0d3e8;
+    --color-success-100: #3a945b;
+    --color-success-200: #43ac6a;
+    --color-error-100: #de2d0f;
+    --color-error-200: #f04124;
+  }
+  :focus {
+    outline: none;
+  }
+  html,
+  body {
+    font-family: var(--font-family);
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 76px 1fr 30px;
+    grid-template-areas: 'header header header header' 'sidebar main main main' 'footer footer footer footer';
+  }
+  
+  .shadow {
+    -webkit-box-shadow: 0 6px 4px -4px black;
+    -moz-box-shadow: 0 6px 4px -4px black;
+    box-shadow: 0 6px 4px -4px black;
+  } */
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

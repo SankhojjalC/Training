@@ -1,0 +1,56 @@
+.banners {
+    box-shadow: 4px 4px 8px rgba(0, 0.3, 0, 0.2);
+    transition: 0.3s;
+    width: 80%;
+    min-height: 12rem;
+    /* background-color: aliceblue;   */
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dotted rgba(97, 89, 89, 0.336);
+    align-items: center;
+    padding: 20px;
+}
+.banners:nth-child(odd) {
+    flex-direction: row;
+}
+.banners:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.item-flex {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.item-flex.item-image {
+    width: 35rem;
+}
+.item-flex.item-image .product-image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.item-flex h3 {
+    font-size: 25px;
+}
+
+.btn {
+    background-color: #d32d2d;
+    border: 0;
+    color: white;
+    padding: 8px 12px;
+    margin: 15px 0;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .item-flex.item-image {
+        width: 15rem;
+    }
+}
